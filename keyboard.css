@@ -1,0 +1,346 @@
+/*
+********** GENERAL  ***********
+*/
+
+*{margin: 0px; padding: 0px;}
+html{height: 100%;}
+body{height: inherit; font-family: Consolas;}
+.heading{
+    font-size: 30px;
+    vertical-align: auto;
+    display:flex;
+    align-items:center;
+}
+
+/*
+********** KEYBOARD GRID  ***********
+*/
+
+
+.keyboardRows{
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    height: 100%;
+}
+
+.row{  
+    display: grid;
+    grid-template-columns: 30fr 6fr 8fr;
+    color: black;
+}
+
+#numEnter,
+#numPlus
+{
+    height: 100%;
+}
+
+.row_fKeys{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 2fr 2fr 2fr 1fr 2fr 2fr 2fr 2fr 1fr 2fr 2fr 2fr 2fr;
+}
+
+
+.row_sysKeys{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.keyMainRows{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.upperSection{
+    height: inherit;
+}
+
+.keyboardRow1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+}
+.keyboardRow2{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
+}
+.keyboardRow3{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+}
+.keyboardRow4{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2.2fr;
+}
+.keyboardRow5{
+    display: grid;
+    grid-template-columns: 1.4fr 1.4fr 1.4fr 6fr 1.4fr 1.4fr 1.4fr 1.4fr;
+}
+
+.arrowsAndNavigation{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+    height: 100%;
+}
+
+.navRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.numKeypad{
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 2fr;
+    height: 100%
+}
+
+.singleRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.doubleRow{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.doubleRow .num{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+
+.doubleRowBottom{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.num{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.num1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.num2{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+/*
+********** REGULAR KEY  ***********
+*/
+
+.keyReg{
+    display: grid;
+    grid-template-rows: 4fr 2fr;
+    background: rgba(209, 209, 209, 0.418); 
+    border: 1px solid rgb(180, 180, 180);
+    border-radius:5px;
+    width: 90%;
+    height: 90%;
+    margin: 5% 5% 5% 5%;
+}
+.keyReg > div{
+    padding: 4% 4% 4% 4%;
+    width: auto;
+    height: auto;
+}
+
+.keyRegTop{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+
+.keyRegChargeBar{
+    padding: 5% 5%;
+    border-radius: 2px;
+    height: auto;
+    width: auto;
+    background: rgb(207, 207, 207);
+}
+
+.keyRegMainFunc{
+    /*background: url("gaming.png");*/
+    
+    display: flex;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center;
+    vertical-align: auto;
+    align-items: center;
+}
+
+.keyRegBottom{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.keyRegSign{
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: auto;
+    align-items: center;
+    line-height: 50%;
+    background: rgb(207, 207, 207);
+}
+
+.keyRegAltFunc{
+    /*background: url("gaming.png");*/
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+/*
+********** WIDE KEY  ***********
+*/
+
+.keyWide{
+    display: grid;
+    grid-template-columns: 15px 7fr 2fr;
+    background: rgba(209, 209, 209, 0.418); 
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    margin: 5% 5% 5% 5%;
+
+}
+
+.keyWide div div{
+    margin: 2px 2px;
+    border-radius:5px;
+}
+
+.keyWideLeft{
+
+}
+
+.keyWideChargeBar{
+    padding: 1px 1px;
+    border-radius: 2px;
+    height: 92%;
+    background: rgb(207, 207, 207);
+}
+.keyWideCenter{
+    display:grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.keyWideRight{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.keyWideMainFunc{
+    /* background: url("gaming.png"); */
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.keyWideAltFunc1,
+.keyWideAltFunc2{
+    /* background: url("gaming.png"); */
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.keyWideKeySign{
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: auto;
+    align-items: center;
+    line-height: 50%;
+    /*background: linear-gradient(0.25turn, #631f00, #360000, #f0000048);*/
+    background: rgb(207, 207, 207);
+}
+
+
+
+/*
+********** LONG KEY  ***********
+*/ 
+
+.keyLong div{
+    height: 100%;    
+}
+
+.keyLong{
+    display: grid;
+    grid-template-rows: 2fr 7fr 15px;
+    height: 100%;
+    background: rgba(209, 209, 209, 0.418); 
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    width: 95%;
+    height: 95%;
+}
+
+.keyLongTop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.keyLongBottom{
+    margin: 0px;
+    padding: 0px;
+}
+
+.keyLongKeySign{
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: auto;
+    align-items: center;
+    line-height: 50%;
+    /*background: linear-gradient(0.25turn, #631f00, #360000, #f0000048);*/
+    background: rgb(207, 207, 207);
+}
+
+.keyLongCenter{
+
+}
+
+.keyLongChargeBar{
+    margin: 0 .2em;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    background: rgb(207, 207, 207);
+}
+
+.keyLongMainFunc{
+    /* background: url("gaming.png"); */
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.keyLongAltFunc{
+    /* background: url("gaming.png"); */
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+img{
+    /*height: 90%;*/
+    width: 80%;
+    
+    
+}
